@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  >
+  </script>
+  <style>
+      @media (min-width: 1024px) {
+          .top-nav {
+              display: inline-flex !important;
+          }
+      }
+
+      @media (max-width: 768px) {
+          .map {
+              display: none;
+          }
+      }
+
+      @media (max-width: 640px) {
+          top {
+              margin-right: 20px;
+              margin-left: 20px;
+              margin-top: 10px;
+          }
+          .top-games {
+              margin-right: 20px;
+              margin-left: 20px;
+              margin-top: 10px;
+          }
+      }
+
+      .footer {
+          background-image: url(/resources/Footer.png);
+          background-size: cover;
+          height: 40vh;
+          width: 100vw;
+      }
+
+      @media (max-width: 768px) {
+        .footer {
+          background-image: url(/resources/Footer.png);
+          background-size: cover;
+          height: 25vh;
+          width: 100vw;
+      }
+      }
+  </style>
+</head>
+<body>
+  <div class="top lg:ml-32 lg:mt-8 lg:mr-10 sm:mt-5 sm:ml-16 sm:mr-10 font-sans">
+  <nav class="flex items-center flex-wrap lg:justify-around">
+      <img class="inline-flex items-center" src="/resources/Logo-Color.jpg" alt="nav-bar-logo" />
+      <button class="lg:hidden ml-auto nav-toggler" data-target="#navigation"><img class="w-12" src="/resources/crypto.png" alt="spread-logo" /></button>
+      <div class="hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+        <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col">
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/play">PLAY</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/sponsor">SPONSOR</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="distribute">DISTRIBUTE</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="retail">RETAIL</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/about">ABOUT</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/community">COMMUNITY</a>
+        </div>
+        <div class="flex flex-row text-center lg:px-16 ">
+            <button class="bg-white text-red-500 flex items-center border-2 rounded-full border-red-500 px-3 mr-5 h-10 w-32 text-center font-bold text-sm">CREATE GAME</button>
+            <button class="bg-blue-800 rounded-full text-xs text-white text-center font-bold px-3 h-10 w-36 ml-3">CONNECT WALLET</button>
+        </div>
+      </div>
+  </nav>
+  <div class="bg-yellow-400 bg-cover rounded-2xl lg:h-96 sm:h-fit mt-10 lg:mr-16 lg:inline-flex lg:flex-row lg:flex-wrap lg:width-full lg:items-center">
+      <div class="flex items-center">
+          <img class="h-80" src="/resources/Group 909.png" />
+          <div class="ml-10 mr-5">
+              <h1 class="font-bold lg:text-3xl">Decentralized lottery</h1>
+              <h3 class="font-bold lg:text-2xl mt-2">For the people, by the people</h3>
+              <h5 class="font-bold text-base lg:max-w-lg mt-8">Lottery of the people is distributed system which allows anyone to create, distribute, buy or sell digital NFT lottery tickets.</h5>
+              <button class="text-white text-sm font-bold bg-red-500 rounded-full px-6 h-8 mt-16">PLAY AND EARN</button>
+          </div>
+          <div>
+            <img class="map flex lg:w-3/4 lg:ml-40" src="/resources/Group 679.png" />
+        </div>
+      </div>
+  </div>
+  <div class="mt-8 lg:mr-16">
+      <div class="flex flex-row justify-between">
+        <h4 class="font-semibold">TOP GAMES</h4>
+        <div class="flex">
+            <h4 class="ml-3 text-blue-500 font-bold">See all</h4>
+            <img class="ml-3" src="/resources/noun-next-arrow-1776684.png" />
+        </div>
+      </div>
+  </div>
+  <div class="top-games lg:inline-flex lg:flex-row grid grid-cols-3">
+    <div class="mt-4 lg:w-52 sm:w-auto mr-2.5 lg:basis-1/6">
+        <div>
+            <img class="lg:w-52 sm:w-auto" src="/resources/Mask Group 3.png" />
+        </div>
+        <div class="flex flex-row mt-1">
+            <h1 class="font-medium text-xs mr-0.5">Super Crossword</h1>
+            <p class="font-normal text-xs text-white bg-orange-500 px-0.5 rounded-md flex items-center">4.7 <img class="ml-1 w-2" src="/resources/Polygon 1.png" /></p>
+            <p class="ml-auto font-bold text-blue-600 text-xs">$5.00</p>
+        </div>
+    </div>
+    <div class="mt-4 lg:w-52 sm:w-auto mr-2.5 lg:basis-1/6">
+        <div>
+            <img class="w-52 sm:w-auto" src="/resources/Mask Group 4.png" />
+        </div>
+        <div class="flex flex-row mt-1">
+            <h1 class="font-medium text-xs mr-0.5">Scratch and win</h1>
+            <p class="font-normal text-xs text-white bg-orange-500 px-0.5 rounded-md flex items-center">4.6 <img class="ml-1 w-2" src="/resources/Polygon 1.png" /></p>
+            <p class="ml-auto font-bold text-blue-600 text-xs">$2.00</p>
+        </div>
+    </div>
+    <div class="mt-4 lg:w-52 sm:w-auto mr-2.5 lg:basis-1/6">
+        <div>
+            <img class="w-52 sm:w-auto" src="/resources/Mask Group 5.png" />
+        </div>
+        <div class="flex flex-row mt-1">
+            <h1 class="font-medium text-xs mr-0.5">Diamond Lotto</h1>
+            <p class="font-normal text-xs text-white bg-orange-500 px-0.5 rounded-md flex items-center">4.2 <img class="ml-1 w-2" src="/resources/Polygon 1.png" /></p>
+            <p class="ml-auto font-bold text-blue-600 text-xs">$10.00</p>
+        </div>
+    </div>
+    <div class="mt-4 lg:w-52 sm:w-auto mr-2.5 lg:basis-1/6">
+        <div>
+            <img class="lg:w-52 sm:w-auto" src="/resources/Mask Group 6.png" />
+        </div>
+        <div class="flex flex-row mt-1">
+            <h1 class="font-medium text-xs mr-0.5">Royal Slots</h1>
+            <p class="font-normal text-xs text-white bg-orange-500 px-0.5 rounded-md flex items-center">4.1 <img class="ml-1 w-2" src="/resources/Polygon 1.png" /></p>
+            <p class="ml-auto font-bold text-blue-600 text-xs">$4.00</p>
+        </div>
+    </div>
+    <div class="mt-4 lg:w-52 sm:auto mr-2.5 lg:basis-1/6">
+        <div>
+            <img class="lg:w-52 sm:auto" src="/resources/Mask Group 2.png" />
+        </div>
+        <div class="flex flex-row mt-1">
+            <h1 class="font-medium text-xs mr-0.5">Big Win</h1>
+            <p class="font-normal text-xs text-white bg-orange-500 px-0.5 rounded-md flex items-center">4.1 <img class="ml-1 w-2" src="/resources/Polygon 1.png" /></p>
+            <p class="ml-auto font-bold text-blue-600 text-xs">$5.00</p>
+        </div>
+    </div>
+    <div class="mt-4 lg:w-52 sm:w-auto lg:basis-1/6">
+        <div>
+            <img class="lg:w-52 sm:w-auto" src="/resources/Mask Group 7.png" />
+        </div>
+        <div class="flex flex-row mt-1">
+            <h1 class="font-medium text-xs mr-0.5">Lucky Hunt</h1>
+            <p class="font-normal text-xs text-white bg-orange-500 px-0.5 rounded-md flex items-center">4.0 <img class="ml-1 w-2" src="/resources/Polygon 1.png" /></p>
+            <p class="ml-auto font-bold text-blue-600 text-xs">$6.00</p>
+        </div>
+    </div>
+  </div>
+  <div class="lg:mt-10">
+      <h4 class="font-semibold text-2xl">Total Money Earned till date</h4>
+      <div class="lg:grid lg:grid-cols-5 grid grid-cols-3 text-center">
+          <div class="mt-8">
+              <h5 class="font-semibold text-lg">Won by Game Players</h5>
+              <h3 class="font-semibold text-3xl mt-3">$45,485</h3>
+          </div>
+          <div class="mt-8">
+            <h5 class="font-semibold text-lg">By Game Creators</h5>
+            <h3 class="font-semibold text-3xl mt-3">$15,599</h3>
+        </div>
+        <div class="mt-8">
+            <h5 class="font-semibold text-lg">By Sponsors</h5>
+            <h3 class="font-semibold text-3xl mt-3">$8,981</h3>
+        </div>
+        <div class="mt-8">
+            <h5 class="font-semibold text-lg">By Distributors</h5>
+            <h3 class="font-semibold text-3xl mt-3">$8,981</h3>
+        </div>
+        <div class="mt-8">
+            <h5 class="font-semibold text-lg">By Retailers</h5>
+            <h3 class="font-semibold text-3xl mt-3">$19,120</h3>
+        </div>
+      </div>
+  </div>
+  <div class="mt-10 mr-10">
+      <h4 class="font-semibold text-2xl mb-4">Join and Earn</h4>
+      <div class="lg:grid lg:grid-cols-2 grid grid-cols-1 gap-2">
+        <div class="bg-[#F6FAFC] flex p-6">
+            <div class="mr-4 lg:w-96">
+                <h5 class="font-semibold text-lg mb-5">For Game Designers</h5>
+                <p class="font-normal text-base mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Maecenas eu libero in erat consequat fermentum quis vel velit. 
+                    Nulla sit amet tortor nunc. Praesent vel interdum diam.
+                </p>
+                <button class="border-2 border-blue-600 text-blue-600 text-sm rounded-full px-6 h-10 w-52">CREATE GAME</button>
+            </div>
+            <div class="flex items-center" >
+                <img class="w-auto lg:ml-10" src="/resources/Group 681.png" />
+            </div>
+        </div>
+        <div class="bg-[#F6FAFC] flex p-6">
+            <div class="mr-4 lg:w-96">
+                <h5 class="font-semibold text-lg mb-5">For Lottery Sponsors</h5>
+                <p class="font-normal text-base mb-8">
+                    Morbi at blandit elit. Aenean ultricies elementum nulla at finibus. 
+                    Morbi vestibulum felis nec mauris ullamcorper dictum. 
+                    In molestie convallis tellus maximus interm phasellus aque metus.
+                </p>
+                <button class="border-2 border-blue-600 text-blue-600 text-sm rounded-full px-6 h-10 w-52">SPONSOR GAME</button>
+            </div>
+            <div class="flex items-center" >
+                <img class="w-auto lg:ml-10" src="/resources/Group 682.png" />
+            </div>
+        </div>
+        <div class="bg-[#F6FAFC] flex p-6">
+            <div class="mr-4 lg:w-96">
+                <h5 class="font-semibold text-lg mb-5">For Distributors</h5>
+                <p class="font-normal text-base mb-8">
+                    Fusce quam dui, imperdiet eget varius ut, faucibus varius leo. 
+                    Vivamus accumsan odio eleifend luctus dapibus. Phasellus dapibus id nisl nec rhoncus. 
+                    Nam eu eros eget massa gravid.
+                </p>
+                <button class="border-2 border-blue-600 text-blue-600 text-sm rounded-full px-6 h-10 w-52">BECOME A DISTRIBUTOR</button>
+            </div>
+            <div class="flex items-center" >
+                <img class="w-auto lg:ml-10" src="/resources/Group 606.png" />
+            </div>
+        </div>
+        <div class="bg-[#F6FAFC] flex p-6">
+            <div class="mr-4 lg:w-96">
+                <h5 class="font-semibold text-lg mb-5">For Retailers</h5>
+                <p class="font-normal text-base mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Maecenas eu libero in erat consequat fermentum quis vel velit. 
+                    Nulla sit amet tortor nunc. Praesent vel interdum diam.
+                </p>
+                <button class="border-2 border-blue-600 text-blue-600 text-base rounded-full px-6 h-10 w-52">Become A Retailers</button>
+            </div>
+            <div class="flex items-center" >
+                <img class="w-auto lg:ml-10" src="/resources/Group 683.png" />
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="mt-10">
+      <h4 class="font-semibold mb-6">How the Lottery of the People Works</h4>
+      <div class="lg:grid lg:grid-cols-6 grid grid-cols-3 gap-1">
+          <div class="flex flex-col items-center">
+              <img class="mb-4 w-16" src="/resources/Group 684.png" />
+              <h5 class="font-semibold text-lg mb-4">Step 1</h5>
+              <p class="font-normal text-base text-center">
+                Game designer creates a game and posts it for Sponsorship
+              </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img class="mb-4 w-16" src="/resources/Group 685.png" />
+            <h5 class="font-semibold text-lg mb-4">Step 2</h5>
+            <p class="font-normal text-sm w-auto text-center">
+                Distributor signs up Retailers
+            </p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img class="mb-4 w-16" src="/resources/Group 686.png" />
+            <h5 class="font-semibold text-lg mb-4">Step 3</h5>
+            <p class="font-normal text-sm w-auto text-center">
+                Retailer sells tickets and games to Customers
+            </p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img class="mb-4 w-16" src="/resources/Group 687.png" />
+            <h5 class="font-semibold text-lg mb-4">Step 4</h5>
+            <p class="font-normal text-sm w-auto text-center">
+                Retailer sells tickets and games to Customers
+            </p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img class="mb-4 w-16" src="/resources/Group 688.png" />
+            <h5 class="font-semibold text-lg mb-4">Step 5</h5>
+            <p class="font-normal text-sm w-auto text-center">
+                Customer selects a game to play and makes payment in crypto or cash to the Retailer
+            </p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img class="mb-4 w-16" src="/resources/Group 689.png" />
+            <h5 class="font-semibold text-lg mb-4">Step 6</h5>
+            <p class="font-normal text-sm w-auto text-center">
+                Everyone involved in the sale, get the commission and the winner gets the prize.
+            </p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="mt-10">
+    <div class="footer flex justify-end ">
+        <div>
+            <img class="lg:w-36 lg:h-36 w-16 h-16" src="/resources/Group 872.png"/>
+        </div>
+    </div>
+</div>
+
+
+  <script>
+      $(document).ready(function() {
+          $(".nav-toggler").each(function(_, navToggler) {
+              var target = $(navToggler).data("target");
+              $(navToggler).on("click", function() {
+                  $(target).animate({
+                      height:"toggle",
+                  });
+              });
+          })
+      })
+  </script>
+</body>
+</html>
