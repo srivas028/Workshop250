@@ -17,25 +17,6 @@
           }
       }
 
-      @media (max-width: 768px) {
-          .map {
-              display: none;
-          }
-      }
-
-      @media (max-width: 640px) {
-          top {
-              margin-right: 20px;
-              margin-left: 20px;
-              margin-top: 10px;
-          }
-          .top-games {
-              margin-right: 20px;
-              margin-left: 20px;
-              margin-top: 10px;
-          }
-      }
-
       .footer {
           background-image: url(/resources/Footer.png);
           background-size: cover;
@@ -45,27 +26,24 @@
 
       @media (max-width: 768px) {
         .footer {
-          background-image: url(/resources/Footer.png);
-          background-size: cover;
           height: 25vh;
-          width: 100vw;
       }
       }
   </style>
 </head>
 <body>
-  <div class="top lg:ml-32 lg:mt-8 lg:mr-10 sm:mt-5 sm:ml-16 sm:mr-10 font-sans">
+  <div class="lg:ml-32 lg:mt-8 lg:mr-10 sm:mt-5 sm:ml-16 sm:mr-10 font-sans">
   <nav class="flex items-center flex-wrap lg:justify-around">
       <img class="inline-flex items-center" src="/resources/Logo-Color.jpg" alt="nav-bar-logo" />
       <button class="lg:hidden ml-auto nav-toggler" data-target="#navigation"><img class="w-12" src="/resources/crypto.png" alt="spread-logo" /></button>
       <div class="hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
         <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col">
-            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/play">PLAY</a>
-            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/sponsor">SPONSOR</a>
-            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="distribute">DISTRIBUTE</a>
-            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="retail">RETAIL</a>
-            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/about">ABOUT</a>
-            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="/community">COMMUNITY</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="#">PLAY</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="#">SPONSOR</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="#">DISTRIBUTE</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="#">RETAIL</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="#">ABOUT</a>
+            <a class="lg:inline-flex lg:w-auto px-4 py-2 text-black font-sans font-bold" href="#">COMMUNITY</a>
         </div>
         <div class="flex flex-row text-center lg:px-16 ">
             <button class="bg-white text-red-500 flex items-center border-2 rounded-full border-red-500 px-3 mr-5 h-10 w-32 text-center font-bold text-sm">CREATE GAME</button>
@@ -83,7 +61,7 @@
               <button class="text-white text-sm font-bold bg-red-500 rounded-full px-6 h-8 mt-16">PLAY AND EARN</button>
           </div>
           <div>
-            <img class="map flex lg:w-3/4 lg:ml-40" src="/resources/Group 679.png" />
+            <img class="hidden lg:inline-block lg:w-3/4 lg:ml-40" src="/resources/Group 679.png" />
         </div>
       </div>
   </div>
@@ -96,7 +74,7 @@
         </div>
       </div>
   </div>
-  <div class="top-games lg:inline-flex lg:flex-row grid grid-cols-3">
+  <div class="ml-5 mr-5 mt-3  lg:inline-flex lg:flex-row grid grid-cols-3">
     <div class="mt-4 lg:w-52 sm:w-auto mr-2.5 lg:basis-1/6">
         <div>
             <img class="lg:w-52 sm:w-auto" src="/resources/Mask Group 3.png" />
@@ -250,7 +228,7 @@
           <div class="flex flex-col items-center">
               <img class="mb-4 w-16" src="/resources/Group 684.png" />
               <h5 class="font-semibold text-lg mb-4">Step 1</h5>
-              <p class="font-normal text-base text-center">
+              <p class="font-normal text-sm w-auto text-center">
                 Game designer creates a game and posts it for Sponsorship
               </p>
           </div>
@@ -293,7 +271,7 @@
   </div>
 </div>
 <div class="mt-10">
-    <div class="footer flex justify-end ">
+    <div class="footer  flex justify-end ">
         <div>
             <img class="lg:w-36 lg:h-36 w-16 h-16" src="/resources/Group 872.png"/>
         </div>
